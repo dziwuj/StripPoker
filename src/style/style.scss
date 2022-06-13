@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+html,
+body {
+    background-color: #444444;
+}
+
+#display {
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    flex-flow: column;
+    width: 960px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+
+    #lady {
+        width: 960px;
+        height: 435px;
+        background-size: cover;
+        flex: 0 1 auto;
+    }
+
+    #table {
+        display: flex;
+        flex-flow: column;
+        flex: 1 1 auto;
+        padding: 5px 30px;
+        background-color: #004000;
+
+        #actions {
+            display: flex;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            height: 30px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 12px;
+            text-justify: center;
+            align-content: space-around;
+            p {
+                padding: auto;
+                margin: auto;
+            }
+            .option {
+                font-size: 20px;
+                font-weight: bold;
+                height: auto;
+            }
+            .option:hover {
+                cursor: pointer;
+            }
+        }
+
+        #lowerTable {
+            color: white;
+            display: flex;
+            flex-flow: row;
+            align-content: space-between;
+            flex: 1 1 auto;
+            text-align: center;
+
+            #cards {
+                height: 100%;
+                width: 480px;
+                // background-color: orange;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+
+                .card {
+                    position: relative;
+                    top: -2px;
+                    left: -2px;
+                    // margin: 2px;
+                    // margin-right: 20px;
+                    height: 96px;
+                    width: 72px;
+                    background-image: url("assets/cards.png");
+                    transform-origin: left top;
+                    transform: scale(1.2);
+                }
+
+                .back {
+                    background-position-y: -384px;
+                }
+            }
+
+            .score {
+                flex: 1 1 auto;
+                text-align: center;
+                .text {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
